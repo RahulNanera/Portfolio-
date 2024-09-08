@@ -1,0 +1,112 @@
+/* Global Styling */
+.footer {
+  background-color: #333; /* Dark background for better contrast */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+#footerh1 {
+  color: white;
+  font-size: 2.5rem; /* Adjusted for better visibility */
+  background: linear-gradient(180deg, #da7c25 0.36%, #b923e1 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#footerp {
+  font-size: 1rem;
+}
+
+.policies {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Responsive Styles */
+
+/* Large screens (1200px and below) */
+@media (max-width: 1200px) {
+  .terms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .policies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footerh1 {
+    font-size: 2rem; /* Slightly smaller font size */
+  }
+}
+
+/* Medium screens (1024px and below) */
+@media (max-width: 1024px) {
+  #footerh1 {
+    font-size: 1.8rem; /* Further reduced font size */
+  }
+
+  .terms {
+    gap: 5rem;
+  }
+
+  .policies {
+    gap: 15px;
+  }
+
+  #footerp {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+  #footerh1 {
+    font-size: 1.5rem; /* Reduced font size for smaller screens */
+  }
+
+  .terms {
+    gap: 2rem;
+  }
+
+  .policies {
+    gap: 10px;
+  }
+
+  #footerp {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  #footerh1 {
+    font-size: 1.2rem; /* Even smaller font size */
+  }
+
+  .terms {
+    gap: 1rem;
+  }
+
+  .policies {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #footerp {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,147 @@
+/* About container */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #000;
+}
+
+/* Heading */
+#abouth1 {
+  color: white;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+/* Pattern Image */
+
+/* About Image */
+#aboutImg {
+  height: 350px;
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+  right: 4px;
+  margin: 0 auto 40px auto;
+}
+
+/* Paragraphs */
+#para1,
+#para2 {
+  color: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  text-align: justify;
+}
+
+/* Skills container */
+.skills {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Each skill block */
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: transform 0.8s;
+}
+
+.skill:hover {
+  transform: scale(1.08);
+}
+
+.skill p {
+  color: white;
+  margin: 0;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  #themeImg {
+    left: 100px;
+    bottom: 280px;
+  }
+
+  #aboutImg {
+    right: 50px;
+    top: 0;
+  }
+
+  #para1,
+  #para2 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #abouth1 {
+    font-size: 35px;
+  }
+
+  #themeImg {
+    height: 130px;
+    width: 130px;
+    left: 0;
+    bottom: 250px;
+  }
+
+  #aboutImg {
+    height: 300px;
+    width: 250px;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  #para1,
+  #para2 {
+    font-size: 16px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  #abouth1 {
+    font-size: 30px;
+  }
+
+  #themeImg {
+    height: 100px;
+    width: 100px;
+    left: 0;
+    bottom: 220px;
+  }
+
+  #aboutImg {
+    height: 250px;
+    width: 200px;
+    right: 0;
+  }
+
+  #para1,
+  #para2 {
+    font-size: 14px;
+    width: 95%;
+  }
+
+  .skill p {
+    font-size: 12px;
+  }
+
+  hr {
+    width: 150px;
+  }
+}

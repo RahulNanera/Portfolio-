@@ -1,0 +1,171 @@
+/* Global Styling */
+.contact {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contacth1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  top: 20px;
+}
+
+#talk {
+  background: linear-gradient(267deg, #df8908 0.36%, #b415ff 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#project {
+  color: white;
+  font-size: 18px;
+  width: 60%;
+  margin: 0 auto 50px auto;
+  line-height: 1.5;
+}
+
+#mailImg,
+#callImg,
+#locationImg {
+  margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+#mailId,
+#callInfo,
+#locationInfo {
+  color: white;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  color: white;
+  align-self: flex-start;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #32323c;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+textarea {
+  height: 150px;
+}
+
+#contactSubmitbtn {
+  color: white;
+  padding: 15px 30px;
+  background: linear-gradient(267deg, #df8908 0.36%, #b415ff 102.06%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#contactSubmitbtn:hover {
+  transform: scale(1.08);
+  transition: 0.9s;
+}
+
+/* Responsive Styles */
+
+/* Medium screens (1024px and below) */
+@media (max-width: 1024px) {
+  #contacth1 {
+    font-size: 40px;
+  }
+
+  #thImg {
+    height: 180px;
+    width: 180px;
+  }
+
+  #talk {
+    font-size: 40px;
+  }
+
+  #project {
+    width: 70%;
+    font-size: 16px;
+  }
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  #contacth1 {
+    font-size: 35px;
+  }
+
+  #thImg {
+    height: 150px;
+    width: 150px;
+  }
+
+  #talk {
+    font-size: 35px;
+  }
+
+  #project {
+    width: 80%;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  #contactSubmitbtn {
+    width: 200px;
+  }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+  #contacth1 {
+    font-size: 28px;
+  }
+
+  #thImg {
+    height: 120px;
+    width: 120px;
+  }
+
+  #talk {
+    font-size: 30px;
+  }
+
+  #project {
+    width: 90%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  #contactSubmitbtn {
+    width: 170px;
+  }
+}

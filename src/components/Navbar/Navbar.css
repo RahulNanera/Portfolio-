@@ -1,0 +1,101 @@
+/* Main container for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar heading */
+#navbarh1 {
+  color: white;
+  background: linear-gradient(180deg, #da7c25 0.36%, #b923e1 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+/* Navigation styles */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+nav ul li:hover {
+  color: #b923e1;
+}
+
+/* Connect button */
+#navConnectbtn {
+  padding: 10px 20px;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.8s;
+}
+
+#navConnectbtn:hover {
+  transform: scale(1.1);
+}
+
+/* Media queries for responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #navConnectbtn {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+  }
+
+  #navbarh1 {
+    font-size: 22px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  #navbarh1 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  nav ul li {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  #navConnectbtn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
